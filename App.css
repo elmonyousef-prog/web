@@ -1,0 +1,219 @@
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.3s ease-in-out;
+}
+
+nav.navbar.scrolled {
+  background-color: #121212;
+  padding: 10px 0;
+}
+
+nav.navbar a.navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  margin: 0 18px;
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+nav.navbar a.navbar-link:hover,
+nav.navbar a.navbar-link.active {
+  opacity: 1;
+}
+
+.social-icon a {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon img {
+  width: 40%;
+}
+
+.vvd {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 26px;
+  background: transparent;
+}
+
+.section {
+  height: 100vh;
+  padding-top: 150px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90deg, #aa367c, #4a2fbd);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.banner h1 {
+  font-size: 65px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.banner .wrap {
+  border-right: 0.08em solid #666;
+}
+
+.banner p {
+  color: #b8b8b8;
+  font-size: 18px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  background: transparent;
+  border: none;
+}
+
+.banner img {
+  animation: updown 3s linear infinite;
+  width: 100%;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
+skill {
+  padding: 80px 0;
+  position: relative;
+}
+
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.skill h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.skill p {
+  color: #b8b8b8;
+  font-size: 18px;
+  margin: 14px 0 75px;
+}
+
+.skill-slider .item h5 {
+  margin-top: 20px;
+}
+
+.background-image-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.projects {
+  padding: 2rem;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+.project-content h3 {
+  margin: 0.5rem 0;
+}
+
+
+.proj-imgbx {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.proj-imgbx img {
+  width: 100%;
+  height: 220px;       
+  transition: transform 0.3s ease;
+}
+
+
+.proj-imgbx:hover img {
+  transform: scale(1.05);
+}
+
+
+.proj-txtx {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+}
